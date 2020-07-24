@@ -1,0 +1,20 @@
+.containerItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.footerItem {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    text-decoration: 'none';
+    color: 'black';
+    margin-left: 10px;
+}
+
+.footerItem:hover {
+    text-decoration: none;
+    color: #4282ad;
+}
+
