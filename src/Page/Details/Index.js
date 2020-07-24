@@ -4,7 +4,7 @@ import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { addItemInCart } from "../../Redux/Actions";
 import Api from "../../Api";
-import Item from "../Item/Index";
+import Item from "../../Components/Item/Index";
 import { connect } from "react-redux";
 import TextField from "@material-ui/core/TextField";
 

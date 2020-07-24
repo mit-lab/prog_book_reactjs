@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Item from "../Item/Index";
+import Item from "../../Components/Item/Index";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import queryString from "query-string";
 import Api from "../../Api";
-import Paging from "../Paging/Index";
-import ProductsHeader from "../ProductsHeader/Index";
+import Paging from "../../Components/Paging/Index";
+import ProductsHeader from "../../Components/ProductsHeader/Index";
 
 
 class ProductList extends Component {
