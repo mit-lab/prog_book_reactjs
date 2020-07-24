@@ -41,7 +41,6 @@ class ConnectedHeader extends Component {
 
   render() {
     let { anchorEl } = this.state;
-
     return (
       <AppBar
         position="static"

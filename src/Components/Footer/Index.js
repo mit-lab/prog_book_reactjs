@@ -3,8 +3,14 @@ import React from "react";
 import LocationOnSharpIcon from '@material-ui/icons/LocationOnSharp';
 import CallSharpIcon from '@material-ui/icons/CallSharp';
 import MailOutlineSharpIcon from '@material-ui/icons/MailOutlineSharp';
-
 import "./Index.css";
+
+import { createFromIconfontCN } from '@ant-design/icons';
+
+const IconFont = createFromIconfontCN({
+  scriptUrl: '//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js',
+});
+
 
 const Footer = () => {
   return (
@@ -61,16 +67,12 @@ const Footer = () => {
                 Facebook
             </a>
           </div>
-        </div>
-        <div style={{display: 'flex', flexDirection: 'column'}}>
           <div className="containerItem">
             <a className="footerItem" 
               href='https://www.facebook.com'>
                 Instagramm
             </a>
           </div>
-        </div>
-        <div style={{display: 'flex', flexDirection: 'column'}}>
           <div className="containerItem">
             <a className="footerItem" 
               href='https://www.twitter.com'>

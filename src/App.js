@@ -6,7 +6,7 @@ import Header from "./Components/Header/Index.js";
 import ProductList from "./Page/ProductList/Index";
 import Details from "./Page/Details/Index";
 import CartDialog from "./Page/CartDialog/Index";
-import Menu from "./Components/Menu/Menu";
+import Menu from "./Components/Menu/Index";
 import Footer from "./Components/Footer/Index";
 
 const App = () => {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import IconButton from "@material-ui/core/IconButton";
-import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { connect } from "react-redux";
 import { addItemInCart } from "../../Redux/Actions";
 import { withRouter } from "react-router-dom";
@@ -16,7 +16,7 @@ class ConnectedItem extends Component {
   render() {
     return (
       <Card
-        style={{ width: 200, height: 370, margin: 10, display: "inline-block" }}
+        style={{ width: 200, height: 420, margin: 10, display: "inline-block" }}
       >
         <CardActionArea
           onClick={() => {
@@ -56,7 +56,7 @@ class ConnectedItem extends Component {
             }}
           >
             {" "}
-            Details
+            Далее
           </Button>
           <Tooltip title="Добавить в корзину">
             <IconButton
@@ -67,10 +67,10 @@ class ConnectedItem extends Component {
                   addItemInCart({ ...this.props.item, quantity: 1 })
                 );
               }}
-              color="primary"
+              color="secondary"
               aria-label="Add to shopping cart"
             >
-              <AddShoppingCartIcon size="small" />
+              <ShoppingCartIcon size="small" />
             </IconButton>
           </Tooltip>
         </CardActions>
