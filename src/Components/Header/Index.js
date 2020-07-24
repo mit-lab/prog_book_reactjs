@@ -13,7 +13,7 @@ import Badge from "@material-ui/core/Badge";
 import { showCartDlg } from "../../Redux/Actions";
 import Img from "../../Img/logo.png";
 import { categories } from "../../Data";
-import "./Index.css";
+import "./Index.scss";
 
 
 const mapStateToProps = state => {

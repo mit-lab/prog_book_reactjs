@@ -3,7 +3,7 @@ import React from "react";
 import LocationOnSharpIcon from '@material-ui/icons/LocationOnSharp';
 import CallSharpIcon from '@material-ui/icons/CallSharp';
 import MailOutlineSharpIcon from '@material-ui/icons/MailOutlineSharp';
-import "./Index.css";
+import "./Index.scss";
 
 import { createFromIconfontCN } from '@ant-design/icons';
 
@@ -25,7 +25,7 @@ const Footer = () => {
       }}
     >
       <div>
-        <div
+        <div 
           style={{ color: "#504F5A", fontWeight: "bold", marginBottom: 10 }}
         >
           Контакты
