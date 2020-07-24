@@ -63,7 +63,7 @@ class ConnectedMenu extends Component {
                 }}
                 key={x.id}
                 activeStyle={{
-                  color: "#4282ad",
+                  color: "red",
                   fontWeight: "bold"
                 }}
               >
