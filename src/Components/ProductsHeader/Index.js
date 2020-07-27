@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import PriceDialog from "../PriceDialog/Index";
 import { withRouter } from "react-router-dom";
+
+import PriceDialog from "../PriceDialog/Index";
 
 class ProductsHeader extends Component {
   state = {
@@ -9,11 +10,8 @@ class ProductsHeader extends Component {
 
   render() {
     let { parsedQueryStr, totalItemsCount, updateQueryStr } = this.props;
-
-    let usePriceFilter = parsedQueryStr.usePriceFilter === "true";
     let minPrice = parsedQueryStr.minPrice || 0;
     let maxPrice = parsedQueryStr.maxPrice || 1000;
-    let sortValue = parsedQueryStr.sortValue || "lh";
     let keyword = parsedQueryStr.term;
     let category = parsedQueryStr.category;
 

@@ -38,10 +38,6 @@ const rootReducer = (state = initialState, action) => {
       };
     case CONSTANTS.TOGGLE_MENU:
       return { ...state, showMenu: !state.showMenu };
-    case CONSTANTS.SET_LOGGED_IN_USER:
-      return { ...state, loggedInUser: action.payload };
-    case CONSTANTS.LOGOUT:
-      return { ...state, loggedInUser: null, checkedOutItems: [] };
     case CONSTANTS.SET_CHECKEDOUT_ITEMS:
       return { ...state, checkedOutItems: action.payload };
     case CONSTANTS.UPDATE_CART_ITEM_QUANTITY: {

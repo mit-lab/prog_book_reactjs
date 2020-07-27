@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-
 import ShoppingCartSharpIcon from '@material-ui/icons/ShoppingCartSharp';
 import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -15,22 +13,12 @@ import Img from "../../Img/logo.png";
 import { categories } from "../../Data";
 import "./Index.scss";
 
-
 const mapStateToProps = state => {
   return {
     nrOfItemsInCard: state.cartItems.length,
     loggedInUser: state.loggedInUser
   };
 };
-
-// Option items for product categories.
-const categoryOptions = categories.map(x => {
-  return (
-    <MenuItem key={x.name} value={x.name}>
-      {x.name}
-    </MenuItem>
-  );
-});
 
 class ConnectedHeader extends Component {
   state = {

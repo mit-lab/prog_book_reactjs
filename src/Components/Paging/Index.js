@@ -46,7 +46,7 @@ const Paging = props => {
         <Left />
       </IconButton>
       <Typography variant="body1">
-        Page {page} of {totalPages}
+        Страница  {page} из {totalPages}
       </Typography>
       <IconButton
         size="small"

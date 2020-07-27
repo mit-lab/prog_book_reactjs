@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import Table from "@material-ui/core/Table";
@@ -6,14 +7,13 @@ import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
-import { connect } from "react-redux";
-import { showCartDlg, setCheckedOutItems } from "../../Redux/Actions";
-import { withRouter } from "react-router-dom";
-import CartRow from "./CartRow";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCartOutlined";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
+import { connect } from "react-redux";
 
+import { showCartDlg, setCheckedOutItems } from "../../Redux/Actions";
+import CartRow from "./CartRow";
 
 const mapStateToProps = state => {
   return { open: state.showCartDialog, items: state.cartItems };
@@ -24,7 +24,6 @@ class FormDialog extends Component {
     let totalPrice = this.props.items.reduce((accumulator, item) => {
       return accumulator + item.price * item.quantity;
     }, 0);
-
     return (
       <div>
         <Dialog
@@ -61,12 +60,11 @@ class FormDialog extends Component {
               </TableHead>
               <TableBody>
                 {this.props.items.map((item, index) => {
-                  return <CartRow item={item} key={item.id} {...this.props} />;
+                  // return <CartRow item={item} key={item.id} {...this.props} />;
                 })}
               </TableBody>
             </Table>
           </div>
-
           <div style={{ display: "flex", padding: 20, alignItems: "center" }}>
             <div
               style={{

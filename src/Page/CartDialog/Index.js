@@ -15,6 +15,9 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 
 
+
+
+
 const mapStateToProps = state => {
   return { open: state.showCartDialog, items: state.cartItems };
 };
@@ -24,7 +27,6 @@ class FormDialog extends Component {
     let totalPrice = this.props.items.reduce((accumulator, item) => {
       return accumulator + item.price * item.quantity;
     }, 0);
-
     return (
       <div>
         <Dialog
@@ -33,7 +35,7 @@ class FormDialog extends Component {
             this.props.dispatch(showCartDlg(false));
           }}
         >
-          <AppBar position="static" style={{ backgroundColor: "#3863aa" }}>
+          <AppBar position="static" style={{ backgroundColor: "red" }}>
             <Toolbar>
               <ShoppingCartIcon
                 fontSize="large"
@@ -84,10 +86,11 @@ class FormDialog extends Component {
                 this.props.dispatch(showCartDlg(false));
                 this.props.dispatch(setCheckedOutItems(this.props.items));
                 this.props.history.push("/");
-              }}
+               }}
             >
               Оформить заказ
             </Button>
+            <p></p>
           </div>
         </Dialog>
       </div>

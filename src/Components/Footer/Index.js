@@ -1,16 +1,9 @@
 import React from "react";
-
 import LocationOnSharpIcon from '@material-ui/icons/LocationOnSharp';
 import CallSharpIcon from '@material-ui/icons/CallSharp';
 import MailOutlineSharpIcon from '@material-ui/icons/MailOutlineSharp';
+
 import "./Index.scss";
-
-import { createFromIconfontCN } from '@ant-design/icons';
-
-const IconFont = createFromIconfontCN({
-  scriptUrl: '//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js',
-});
-
 
 const Footer = () => {
   return (
